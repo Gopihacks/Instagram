@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup  |  Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./Images/insta_logo.jpg" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 145vh;
+        }
+        
+        #inner
+        {
+            border: 1px solid rgba(166, 164, 164, 0.791);
+            width: 300px;
+            padding: 25px;
+        }
+        .img_div{
+            display: flex;
+            justify-content: center;
+        }
+        .img{
+            padding: 4px;
+            margin-bottom: 10px;
+            width: 180px;
+        }
+        .span{
+            display: grid;
+            grid-template-columns: auto;
+            text-align: center;
+            padding: 0px 9px;
+        }
+        .con{
+            font-size: 16px;
+            font-weight: 500;
+            color: gray;
+        }
+        #login_fb{
+            display: flex;
+            justify-content: center;
+            margin: 18px;
+        }
+        .login_fb{
+            padding: 7px;
+            font-size: 14px;
+            font-weight: 500;
+            width: 400px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            background-color: rgb(0, 157, 255);
+        }
+        .login_fb i{
+            font-size: 19px;
+            padding-right: 6px;
+        }
+        #span{
+            margin: 18px;
+        }
+        .span1,.span3{
+          color:rgb(153, 152, 152);;
+        }
+        .span2{
+            padding: 10px;
+            font-size: 13px;
+            color: rgb(153, 152, 152);
+        }
+        #inputs{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 14px;
+        }
+        .input{
+            margin: 3px;
+            padding: 10px;
+            background-color: rgba(220, 220, 220, 0.187);
+            border: 1px solid gainsboro;
+            border-radius: 3px;
+        }
+        #learn{
+            display: grid;
+            grid-template-columns: auto;
+            text-align: center;
+            margin: 20px;
+        }
+        .learn,.terms{
+            font-size: 12px;
+            color: gray;
+        }
+        .learn a ,.terms a{
+            text-decoration: none;
+            color:rgb(54, 54, 54);
+        }
+        #terms{
+            display: grid;
+            grid-template-columns: auto;
+            text-align: center;
+            margin: 10px 20px;
+        }
+        #sign_up{
+            display: flex;
+            justify-content: center;
+            margin: 20px 20px 0px 20px;
+        }
+       #sign_up button{
+            padding: 9px;
+            font-size: 14px;
+            font-weight: 600;
+            width: 400px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            background-color: rgba(0, 157, 255, 0.582);
+       }
+       #col2{
+            border: 1px solid rgba(128, 128, 128, 0.754);
+            display: grid;
+            grid-template-columns: auto ;
+            text-align: center;
+            width: 310px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-top: 10px;
+        }
+        .sign_up{
+            color: rgba(12, 12, 12, 0.895);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .sign_up a{
+            text-decoration: none;
+            color:rgb(35, 180, 237) ;
+            font-weight: 600;
+        }
+        #col3{
+            display: grid;
+            grid-template-columns: auto;
+            text-align: center;
+            width: 310px;
+            margin-top: 20px;
+        }
+        .Get_app{
+            font-size: 14px;
+            padding-left: 30px;
+        }
+        .logo{
+            display: grid;
+            grid-template-columns: auto auto; 
+            margin-bottom: 40px;          
+        }
+        .Google{
+            width: 140px;
+            border-radius: 10px;
+            padding:10px 8px 10px 40px;
+        }
+        .Microsoft{
+            width: 130px;
+            border-radius: 4px;
+            height: 43px;
+            padding:10px 0px;
+        }
+        #row2{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: rgba(151, 150, 150, 0.868);
+            margin: 10px;
+        }
+        .bottom{
+            padding-left: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+            <div class="img_div">
+                <img src="./Images/Insta_Name.png" alt="Instagram" class="img" />
+            </div>
+            <div class="span">
+                <span class="con">Sign up to see photos and videos from your friends.</span>
+            </div>
+            <div id="login_fb">
+                <button class="login_fb">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <span class="span_fb">Log in with Facebook</span>
+                </button>
+            </div>
+            <div id="span">
+                <span class="span1">____________</span>
+                <span class="span2">OR</span>
+                <span class="span3"> ____________</span>
+            </div>
+            <div id="inputs">
+                <input type="text" placeholder="Mobile Number or Email" class="input" />
+                <input type="text" placeholder="Full Name" class="input"/>
+                <input type="text" placeholder="Username" class="input"/>
+                <input type="password" placeholder="Password" class="input"/>
+            </div>
+            <div id="learn">
+                <span class="learn">
+                    People who use our service may have uploaded your contact information to Instagram.
+                    <a href="#">Learn More</a>
+                </span>
+            </div>
+            <div id="terms">
+                <span class="terms">
+                    By signing up, you agree to our <a href="#">Terms , Privacy Policy and Cookies Policy .</a>
+                </span>
+            </div>
+            <div id="sign_up">
+                <button>Sign up</button>
+            </div>
+        </div>
+        <div id="col2">
+            <div class="sign_up">
+                 Have an account? <a href="./index.html" target="_blank">Log in</a>
+            </div>
+        </div>
+        <div id="col3">
+            <div><span class="Get_app">Get the app</span></div>
+            <div class="logo">
+                <div><img src="./Images/Google_play.png" alt="Google_play" class="Google"/></div>
+                <div><img src="./Images/Microsoft.png" alt="Microsoft_logo"  class="Microsoft"/></div>
+            </div>
+        </div>
+ </div>
+
+    <div id="row2">
+        <div class="bottom">Meta</div>
+        <div class="bottom">About</div>
+        <div class="bottom">Blog</div>
+        <div class="bottom">Jobs</div>
+        <div class="bottom">Help</div>
+        <div class="bottom">API</div>
+        <div class="bottom">Privacy</div>
+        <div class="bottom">Terms</div>
+        <div class="bottom">Locations</div>
+        <div class="bottom">Instagram Lite</div>
+        <div class="bottom">Threads</div>
+        <div class="bottom">Contact Uploading & Non-Users</div>
+        <div class="bottom">Meta Verified</div>
+        <div class="bottom">English</div>
+        <div class="bottom">© 2024 Instagram from Meta</div>
+        
+    </div>
+</body>
+</html>

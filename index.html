@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./Images/insta_logo.jpg" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: sans-serif;
+            flex-direction: column;
+        }
+        #row{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .img {
+            width: auto;
+            height: 600px;
+            margin: 25px;
+        }
+        @media screen and (max-Width:900px) {
+            .img{
+                display: none;
+            }
+        }
+        #col2_in,#col3{
+            border: 1px solid rgba(128, 128, 128, 0.754);
+            display: grid;
+            grid-template-columns: auto ;
+            text-align: center;
+            width: 310px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        #img_insta{
+            display: flex;
+            justify-content: center;
+        }
+        .img_insta{
+            padding: 20px;
+            width: 170px;
+        }
+        .input{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .search1{
+            padding: 10px;
+            width: 250px;
+            margin: 15px 0px 0px 19px;
+            background-color: rgba(220, 220, 220, 0.187);
+            border: 1px solid gainsboro;
+            border-radius: 3px;
+        }
+        .search2{
+            padding: 10px;
+            width: 250px;
+            margin: 5px 0px 0px 19px;
+            background-color: rgba(220, 220, 220, 0.187);
+            border: 1px solid gainsboro;
+            border-radius: 3px;
+        }
+        .btn_login{
+            background-color: rgb(0, 157, 255);
+            color: white;
+            font-weight: 700;
+            padding: 8px;
+            margin-top: 18px;
+            width: 270px;
+            border: none;
+            border-radius: 6px;
+        }
+        #span{
+            margin: 20px;
+        }
+        .span1,.span3{
+          color:rgb(153, 152, 152);;
+        }
+        .span2{
+            padding: 10px;
+            font-size: 13px;
+            color: rgb(153, 152, 152);
+        }
+        #login_fb{
+            margin-top: 18px;
+        }
+        #login_fb i{
+            padding-right: 4px;
+            color: rgb(95, 95, 95);
+            font-size: 20px;
+        }
+        .span_fb{
+            color: gray;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        #span_fp{
+            margin-top:16px;
+        }
+        .span_fp{
+            font-size: 12px;
+        }
+        #col3{
+            margin-top: 10px;
+        }
+        .sign_up{
+            color: rgba(53, 51, 51, 0.895);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .sign_up a{
+            text-decoration: none;
+            color: blue;
+            font-weight: 600;
+        }
+        #col4{
+            display: grid;
+            grid-template-columns: auto;
+            text-align: center;
+            width: 310px;
+            margin-top: 20px;
+        }
+        .Get_app{
+            font-size: 14px;
+            padding-left: 30px;
+        }
+        .logo{
+            display: grid;
+            grid-template-columns: auto auto;
+                       
+        }
+        .Google{
+            width: 140px;
+            border-radius: 10px;
+            padding:10px 8px 10px 40px;
+        }
+        .Microsoft{
+            width: 130px;
+            border-radius: 4px;
+            height: 43px;
+            padding:10px 0px;
+        }
+        #row2{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: rgba(151, 150, 150, 0.868);
+            margin: 10px;
+        }
+        .bottom{
+            padding: 8px;
+            font-size: 12px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="row">
+        <div id="col1">
+            <img src="./Images/Insta_phone.png" alt="Interface of instagram" class="img"/>
+        </div>
+        <div id="col2">
+                <div id="col2_in">
+                    <div id="img_insta">
+                        <img src="./Images/Insta_Name.png" class="img_insta" />
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Phone number,Username,or email" class="search1" />
+                        <input type="password" placeholder="Password" class="search2" />
+                    </div>
+                    <div>
+                        <button class="btn_login">Log in</button>
+                    </div>
+                    <div id="span">
+                        <span class="span1">____________</span>
+                        <span class="span2">OR</span>
+                        <span class="span3"> ____________</span>
+                    </div>
+                    <div id="login_fb">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <span class="span_fb">Log in with Facebook</span>
+                    </div>
+                    <div id="span_fp">
+                        <span class="span_fp">Forgot password?</span>
+                    </div>
+                
+                </div>
+
+                <div id="col3">
+                    <div class="sign_up">
+                        Don't have an account? <a href="./Signup.html" target="_blank">Sign up</a>
+                    </div>
+                </div>
+
+                <div id="col4">
+                    <div><span class="Get_app">Get the app</span></div>
+                    <div class="logo">
+                        <div><img src="./Images/Google_play.png" alt="Google_play" class="Google"/></div>
+                        <div><img src="./Images/Microsoft.png" alt="Microsoft_logo"  class="Microsoft"/></div>
+                    </div>
+                </div>
+        </div>
+        
+        
+        
+    </div>
+    <div id="row2">
+        <div class="bottom">Meta</div>
+        <div class="bottom">About</div>
+        <div class="bottom">Blog</div>
+        <div class="bottom">Jobs</div>
+        <div class="bottom">Help</div>
+        <div class="bottom">API</div>
+        <div class="bottom">Privacy</div>
+        <div class="bottom">Terms</div>
+        <div class="bottom">Locations</div>
+        <div class="bottom">Instagram Lite</div>
+        <div class="bottom">Threads</div>
+        <div class="bottom">Contact Uploading & Non-Users</div>
+        <div class="bottom">Meta Verified</div>
+        <div class="bottom">English</div>
+        <div class="bottom">© 2024 Instagram from Meta</div>
+        
+    </div>
+</body>
+</html>
